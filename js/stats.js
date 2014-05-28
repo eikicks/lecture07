@@ -60,6 +60,8 @@ var initApp = function(){
 
     outputMean = document.querySelector("#mean");
 
+    outputMax = document.querySelector("#max");
+
     var calcMeanButton = document.querySelector("#start");
     calcMeanButton.addEventListener("click", calcStats);
 };
