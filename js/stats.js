@@ -53,6 +53,7 @@ var calcMean = function(){
 var calcStats = function(){
     calcMean();
     //calcmeanを呼び出す
+    calcMax();
 };
 
 var initApp = function(){
