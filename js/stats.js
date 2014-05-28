@@ -4,6 +4,13 @@ var inputElements = [];
 var outputMean = null;
 
 
+var error = document.querySelector("#error");
+
+var showError = function(){
+    alert("文字だけです！！！数字を入れてください！");
+};
+
+
 /**
  * initInputElements: データ入力用のテキスト入力集めた配列を作成
  */
@@ -38,11 +45,14 @@ var calcMean = function(){
 
     if(n > 0){
         outputMean.textContent = sum / n;
+    }else{
+        showError();
     }
 };
 
 var calcStats = function(){
     calcMean();
+    //calcmeanを呼び出す
 };
 
 var initApp = function(){
